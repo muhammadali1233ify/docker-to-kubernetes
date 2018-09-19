@@ -2,14 +2,14 @@
 ## Description
 
 ## Procedure
-1. Once the cluster is intanciated, follow the access guideline of the service from page.
+1. Once the cluster is instantiated, follow the access guideline of the service from the page.
 
 2. Pull a docker image of your choice. Typically all images come with a dockerfile that describe the environment and the necessary files required for running that instance.<br/>
 `
 docker pull nshou/elasticsearch-kibana
 `
 
-3. Tag your release to explicitly identify it with IBM registry url that you intanciated your cluster on. In our case it's **us-east**. The namespace below is **wsa-namespace** and image name and tag is defined as **nshou-elastic-kibana:0.1**.<br/>
+3. Tag your release to explicitly identify it with IBM registry url that you instantiated your cluster on. In our case it's **us-east**. The namespace below is **wsa-namespace** and image name and tag is defined as **nshou-elastic-kibana:0.1**.<br/>
 `docker tag nshou/elasticsearch-kibana registry.us-east.bluemix.net/wsa-namespace/nshou-elastic-kibana:0.1`
  
 4. Push the new release on ibmcloud. The image can then be found on cloud registry and can be viewed using 'ibmcloud cr image-list'<br/>
