@@ -21,5 +21,5 @@ docker pull nshou/elasticsearch-kibana
 6. create deployment and service using **.yml** file. NodePort definition is optional as the kubernetes engine will automatically define it.<br/>
 `kubectl create -f nshou-elastic-kibana-deploy-yml.yml`
  
-7. Your application will hosted at <cluster_IP_address>:<NodePort>  
+7. Your application will hosted at **<cluster_IP_address:NodePort>**  
 `http://169.63.76.233:30007`
